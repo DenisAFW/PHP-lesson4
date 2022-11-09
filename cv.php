@@ -14,7 +14,6 @@
     </style>
   </head>
 <body class="w3-light-grey">
-
 <!-- Page Container -->
 <div class="w3-content w3-margin-top" style="max-width:1400px;">
 
@@ -85,21 +84,25 @@
       <div class="w3-container w3-card w3-white w3-margin-bottom">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Опыт работы</h2>
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>Front End Developer </b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Web Developer / something.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
-          <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Graphic Designer / designsomething.com</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
+        <?php $job = 
+          [
+            'position' => ['Lawyer', 'Driver', 'Engineer'],
+            'period' => ['2018 - current', '2013-2021', '2014 - current',],
+            'description' => ['Development of draft legal documents', 'Car driver', 'Product certification']
+          ]
+        ?>
+         <h5 class="w3-opacity"><b><?php echo $job['position'][0] ?> </b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><?php echo $job['period'][0] ?> </h6>
+			<p><?php echo $job['description'][0]?></p>
+              <hr>
+          <h5 class="w3-opacity"><b><?php echo $job['position'][1] ?> </b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><?php echo $job['period'][1] ?> </h6>
+			<p><?php echo $job['description'][1]?></p>
+            <hr>
+          <h5 class="w3-opacity"><b><?php echo $job['position'][2] ?> </b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i><?php echo $job['period'][2] ?> </h6>
+			<p><?php echo $job['description'][2]?></p>
+            <hr>
         </div>
       </div>
 
