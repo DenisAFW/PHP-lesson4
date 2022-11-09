@@ -100,6 +100,8 @@
             'description' => 'Product certification '
           ]
         ?>
+        <?php foreach($skills as $skillName => $skillValue): ?>
+          <p><?php echo $skillName; ?></p>
         <!-- <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Опыт работы</h2>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Front End Developer </b></h5>
